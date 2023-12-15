@@ -1,0 +1,129 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: #4481eb;
+  --black-color: hsl(0, 0%, 0%);
+  --black-color-light: hsl(0, 0%, 40%);
+  --white-color: hsl(0, 0%, 95%);
+  --title-color: hsl(0, 0%, 0%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 64%);
+  --body-color: hsl(0, 0%, 87%);
+  --container-color: hsl(0, 0%, 83%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color .4s;
+}
+
+header{
+    height: var(--header-height);
+    width: 100%;
+    margin: 0 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.logo{
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+}
+.logo span{
+    color: var(--first-color);
+}
+
+.nav__wrapper ul{
+    display: flex;
+    list-style: none;
+    column-gap: 1rem;
+}
+
+.nav__wrapper ul li a{
+    color: var(--black-color-light);
+    text-decoration: none;
+    font-size: var(--h2-font-size);
+}
+.nav__wrapper ul li:hover a{
+    color: var(--first-color);
+}
+
+.main_container{
+    /* background-color: red; */
+    min-height: calc(100vh - var(--header-height));
+}
+
+.dashboard{
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 0 2rem;
+    /* background-color: #4481eb; */
+}
+
+.dashboard .dashboard_image img{
+    max-height: 500px;
+    transform: rotateY(180deg);
+}
+
+.dashboard_info .large{
+    font-size: 4rem;
+    font-weight: var(--font-bold);
+    margin: 2rem 0;
+}
+
+.dashboard_info .large span{
+    color: var(--first-color);
+}
+
+.dashboard_info .tag{
+    font-size: var(--h2-font-size);
+}

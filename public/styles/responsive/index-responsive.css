@@ -1,0 +1,29 @@
+
+@media only screen and (max-width: 767px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__wrapper{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        transform: translateX(-2rem);
+    }
+    
+    .nav__wrapper ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: center;
+    }
+
+    /* HOME PAGE FORMATTING */
+    .main_banner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+}

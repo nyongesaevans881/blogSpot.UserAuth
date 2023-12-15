@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog-Spot/User/dashboard</title>
+  <link rel="stylesheet" href="/styles/dashboard.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+
+      <div class="logo">
+        <span>Blog</span>Spot
+      </div>
+
+      <div class="nav__wrapper">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Feed</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main_container">
+    <div class="dashboard">
+      <div class="dashboard_info">
+        <p class="large">Hi,&nbsp;<span><%= user ? user.name : 'Guest' %> </span></p>
+        <p class="tag">This is your dashboard, you can be able to manage all your blog posts from this area.</p>
+      </div>
+      <div class="dashboard_image">
+        <img src="/images/dashboard/dashboard_banner.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="/script/script.js"></script>
+</body>
+</html>

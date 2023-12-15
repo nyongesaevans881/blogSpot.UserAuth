@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--=================== my favicon image =================================-->
+  <link rel="icon" href="/favicon.png" type="image/x-icon">
+
+  <!--=================== the tittle ========================================-->
+  <title>Blog Spot</title>
+
+  <!--===================== My Css ===========================================-->
+  <link rel="stylesheet" href="/styles.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="navigation">
+      <div class="navigation-wrapper">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/smoothies">Dashboard</a></li>
+          <% if(user) { %>
+            <li><a href="/logout">Log Out</a></li>
+            <% }else{ %>
+            <li><a href="/login">Login</a></li>
+            <% } %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <h1><a href="/">Blog Spot</a></h1>
+  </nav>
+  

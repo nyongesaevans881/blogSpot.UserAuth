@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog-Spot/User/dashboard</title>
+  <link rel="stylesheet" href="/styles/index.css">
+  <!-- <link rel="stylesheet" href="/styles/responsive/index-responsive.css"> -->
+   <!--=============== FONT-AWSOME ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+
+      <div class="logo">
+        <span>Blog</span>Spot
+      </div>
+
+      <div class="nav__wrapper">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+          <% if(user) { %>
+            <li><a href="/logout" class="btn solid">Log Out</a></li>
+            <% }else{ %>
+            <li><a href="/signup&login" class="btn solid">Login</a></li>
+            <% } %>
+        </ul>
+      </div>
+      
+    </div>
+  </header>
+
+  <div class="main_container">
+    <div class="main_banner">
+      <div class="home_info">
+        <p class="text-large">Welcome to BlogSpot</p>
+        <p class="text-small">Welcome to BlogSpot! Start sharing your thoughts and stories today. <span> Happy blogging!</span></p>
+        <a href="/signup&login" class="gradient-button">Get Blogging</a>
+      </div>
+      <div class="home_image">
+        <img src="/images/home/home_perfil.svg" alt="image">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="about-container">
+    <div class="about-wrapper">
+      <div class="about-image">
+        <img src="/images/home/choose-us.svg" alt="image">
+      </div>
+      <div class="about-info">
+        <h2>Why Choose Us.!</h2>
+          <ul>
+            <li>Responsive design</li>
+            <li>User-Friendly Interface</li>
+            <li>Fast Loading Times</li>
+            <li>Engaging Content</li>
+            <li>Access to Valuable Information</li>
+            <li>Community Engagement and Interaction</li>
+          </ul>
+          <a href="/signup&login" class="gradient-button">Get Blogging</a>
+      </div>
+    </div>
+  </div>
+ 
+
+</body>
+
+<footer>
+  <div class="footer-info">
+    <p>© 2023 Blog Spot. All rights reserved.</p>
+    <div class="support">
+      <a href="#"><i class="fa fa-user-plus"></i>&nbsp;Support</a>
+    </div>
+  </div>
+  <script src="/script/script.js"></script>
+</footer>
+</html>
