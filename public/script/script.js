@@ -65,7 +65,7 @@ const hide = document.querySelector('.hide');
      if(data.user){
          location.assign('/dashboard')
      }
- }, 2000);
+ }, 1000);
  }
  catch(err){
      console.log(err);

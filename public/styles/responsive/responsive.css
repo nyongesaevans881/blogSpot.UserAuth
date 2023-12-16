@@ -1,0 +1,78 @@
+
+@media only screen and (max-width: 767px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__wrapper{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        transform: translateX(-2rem);
+    }
+    
+    .nav__wrapper ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: center;
+    }
+
+    /* HOME PAGE FORMATTING */
+    .main_banner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        place-items: center;
+    }
+    .home_info{
+        width: 80%;
+        height: 300px;
+        z-index: 99;
+    }
+    .home_image img{
+        width: 80%;
+        height: 300px;
+    }
+
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    .about-image img{
+        /* width: 80%; */
+        height: 300px; 
+        display: none;
+    }
+    .about-info{
+        font-size: 10px;
+    }
+
+
+    /* DASHBOARD */
+    .dashboard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 8rem;
+        place-items: center;
+        text-align: center;
+    }
+
+    .dashboard_info .large{
+        font-size: 35px;
+    }
+
+    .dashboard_image img{
+        width: 80%;
+        height: 300px;
+    }
+}
+
+
+
